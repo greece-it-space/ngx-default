@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="el">
+	<head>
+		<meta charset="utf-8" />
+		<title>Greece IT Space</title>
+		<base href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<script>
+			try {
+				const storedMode = localStorage.getItem('app-mode');
+				const preferredMode =
+					storedMode === 'dark' || storedMode === 'light'
+						? storedMode
+						: window.matchMedia('(prefers-color-scheme: dark)').matches
+							? 'dark'
+							: 'light';
+				document.documentElement.setAttribute('data-mode', preferredMode);
+			} catch {}
+		</script>
+
+		<meta
+			name="description"
+			content="Greece IT Space - ανάπτυξη web και mobile εφαρμογών, IT εκπαίδευση, πρακτική άσκηση και ψηφιακές λύσεις για επιχειρήσεις στην Ελλάδα και πέρα από αυτή."
+		/>
+		<meta name="author" content="Ομάδα Greece IT Space" />
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+		<meta name="theme-color" content="#061526" media="(prefers-color-scheme: dark)" />
+
+		<meta itemprop="name" content="Greece IT Space" />
+		<meta
+			itemprop="description"
+			content="Ανάπτυξη web και mobile εφαρμογών, IT εκπαίδευση, πρακτική άσκηση και ψηφιακά προϊόντα από το Greece IT Space."
+		/>
+		<meta itemprop="image" content="https://ngx.greeceit.space/logo.png" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Greece IT Space" />
+		<meta property="og:locale" content="el_GR" />
+		<meta property="og:url" content="https://ngx.greeceit.space/" />
+		<meta property="og:title" content="Greece IT Space" />
+		<meta
+			property="og:description"
+			content="Ανάπτυξη web και mobile εφαρμογών, IT εκπαίδευση, πρακτική άσκηση και ψηφιακές λύσεις για επιχειρήσεις."
+		/>
+		<meta property="og:image" content="https://ngx.greeceit.space/logo.png" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Greece IT Space" />
+		<meta
+			name="twitter:description"
+			content="Ανάπτυξη web και mobile εφαρμογών, IT εκπαίδευση, πρακτική άσκηση και ψηφιακές λύσεις για επιχειρήσεις."
+		/>
+		<meta name="twitter:image" content="https://ngx.greeceit.space/logo.png" />
+		<meta name="twitter:image:src" content="https://ngx.greeceit.space/logo.png" />
+
+		<link rel="canonical" href="https://ngx.greeceit.space/" />
+		<link rel="icon" type="image/x-icon" href="favicon.png" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<app-root></app-root>
+	</body>
+</html>
