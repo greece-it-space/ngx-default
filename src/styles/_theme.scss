@@ -1,0 +1,94 @@
+/* Design tokens (CSS variables). Runtime-themable; keep SCSS using var(--token) */
+:root {
+  color-scheme: light;
+
+  /* brand / actions */
+  --c-primary: #0d5eaf;
+  --c-primary-hover: #0a4f93;
+  --c-secondary: #002b5c;
+  --c-secondary-hover: #001f42;
+
+  /* surfaces */
+  --c-bg-primary: #f3f8ff;
+  --c-bg-secondary: #ffffff;
+  --c-bg-tertiary: #dbeafe;
+
+  /* content */
+  --c-text: #4f6680;
+  --c-text-strong: #06284f;
+  --c-text-muted: #7a91a8;
+  --c-placeholder: #7a91a8b3;
+
+  /* borders & elevation */
+  --c-border: #bfd7f0;
+  --shadow-sm: 0 1px 2px rgba(6, 40, 79, 0.08);
+  --shadow-md: 0 10px 30px rgba(6, 40, 79, 0.14);
+
+  /* typography */
+  --ff-base: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --fs: 16px;
+  --letter-spacing: 0;
+
+  /* radius (default rounded) */
+  --radius: 8px;
+  --radius-card: 12px;
+  --radius-btn: 999px;
+
+  /* spacing (default comfortable) */
+  --sp-0: 0px;
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-7: 32px;
+  --sp-8: 40px;
+  --sp-10: 48px;
+  --sp-12: 56px;
+  --sp-16: 72px;
+  --sp-20: 96px;
+
+  /* layout */
+  --container: 1210px;
+  --gutter: 10px;
+
+  /* motion */
+  --easing: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --motion-fast: 0.15s;
+  --motion: 0.25s;
+  --motion-slow: 0.4s;
+
+  /* focus */
+  --focus-ring: 0 0 0 3px rgba(13, 94, 175, 0.22);
+}
+
+/* ========= modes ========= */
+html[data-mode='dark'] {
+  color-scheme: dark;
+
+  /* brand / actions */
+  --c-primary: #4da3ff;
+  --c-primary-hover: #7bbcff;
+  --c-secondary: #eaf5ff;
+  --c-secondary-hover: #ffffff;
+
+  /* surfaces */
+  --c-bg-primary: #061526;
+  --c-bg-secondary: #0b2138;
+  --c-bg-tertiary: #12365a;
+
+  /* borders & elevation */
+  --c-border: #1f4d78;
+  --shadow-sm: 0 6px 16px rgba(0, 0, 0, 0.28);
+  --shadow-md: 0 14px 36px rgba(0, 0, 0, 0.36);
+
+  /* content */
+  --c-text: #b8d4ee;
+  --c-text-strong: #f4faff;
+  --c-text-muted: #8fb2d1;
+  --c-placeholder: #8fb2d1cc;
+
+  /* focus */
+  --focus-ring: 0 0 0 3px rgba(77, 163, 255, 0.28);
+}
